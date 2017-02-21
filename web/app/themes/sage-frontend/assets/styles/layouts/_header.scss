@@ -4,3 +4,20 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.page-header {
+	padding-top: 15px;
+	padding-bottom: 10px;
+	border-bottom: none;
+}
+
+.front-search, .front-search:focus {
+	border-radius: 0;
+	border: none;
+	background-color: $gray-lighter;
+}
+
+.fa {
+	color: black;
+	font-size: 25px;
+}

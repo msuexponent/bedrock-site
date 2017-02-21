@@ -154,3 +154,4 @@ add_action('after_setup_theme', function () {
  * Init config
  */
 sage()->bindIf('config', Config::class, true);
+
