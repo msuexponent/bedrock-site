@@ -1,0 +1,125 @@
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+.max-img-height {
+	overflow: hidden;
+	max-height: 261.61px;
+}
+
+.sub-sec-max-img-height {
+	overflow: hidden;
+	max-height: 172.38px;
+}
+
+
+/* Margin classes start */
+.top10 {
+	margin-top: 10px;
+}
+
+.top20 {
+	margin-top: 20px;
+}
+
+.top25 {
+	margin-top: 25px;
+}
+
+.top30 {
+	margin-top: 30px;
+}
+
+.top40 {
+	margin-top: 40px;
+}
+
+.bottom40 {
+	margin-bottom: 40px;
+}
+
+.bottom-no-marg {
+	margin-bottom: 0;
+}
+/* Margin classes end */
+
+
+/* Position classes start */
+.position-abs-top {
+	position: absolute;
+	z-index: 1;
+	top: 10px;
+	left: 10px;
+}
+
+.position-abs-bottom {
+	position: absolute;
+	z-index: 1;
+	bottom: 10px;
+	left: 10px;
+}
+/* Position classes end */
+
+
+.section-container {
+	overflow-y: hidden;
+	max-height: 240px;
+}
+
+.sub-post {
+	position: relative;
+	background-color: $gray-lighter;
+	height: 87.8px;
+}
+
+h2 {
+	padding-bottom: 10px;
+	font-weight: 100;
+	border-bottom: 1px solid $gray-dark;
+	text-transform: lowercase;
+	font-family: arial;
+	font-size: 18px;
+}
+
+.post-link:hover .sub-post {
+	background-color: $gray-lighter;
+}
+
+.featured-title {
+	font-size: 36px;
+	color: #2c3e63;
+	font-weight: 100;
+	font-family: arial;
+	line-height: 1.4;
+}
+
+.post-title {
+	font-weight: 100;
+	font-family: arial;
+	color: #2c3e63;
+	font-size: 16px;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.post-desc {
+	font-size: 15px;
+	font-family: times;
+	color: black;
+}
+
+.post-author {
+	line-height: 1;
+	font-size: 13px;
+	font-weight: bold;
+	color: black;
+	font-family: arial;
+}
+
+@include media-breakpoint-between(xs, sm) {
+	xs-top10 {
+		margin-top: 10px;
+	}
+	
+}
