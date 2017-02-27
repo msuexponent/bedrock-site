@@ -16,7 +16,7 @@
 
 <div class="col-md-3 col-sm-12">
 	<div class="row">
-		@php($inner_my_query = new WP_Query( 'category_name=Featured' ))
+		@php($inner_my_query = new WP_Query( 'category_name=Featured&posts_per_page=3' ))
 		@while ($inner_my_query->have_posts()) @php($inner_my_query->the_post())
 			<div class="col-12">
 				<a class="post-link" href="#">

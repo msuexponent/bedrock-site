@@ -15,7 +15,7 @@
 	@endwhile
 
 	<div class="col-md-6 col-12">
-		@php($inner_my_query = new WP_Query( 'category_name=Opinion' ))
+		@php($inner_my_query = new WP_Query( 'category_name=Opinion&posts_per_page=3' ))
 		@while($inner_my_query->have_posts()) @php($inner_my_query->the_post())
 		<a class="post-link" href="#">
 			<div class="sub-post col-sm-12">
