@@ -1,6 +1,6 @@
-<!-- Sports section -->
+<!-- Culture section -->
 <div class="row top10">
-	@php($my_query = new WP_Query( 'category_name=Sports&posts_per_page=1' ))
+	@php($my_query = new WP_Query( 'category_name=Culture&posts_per_page=1' ))
 	@while ($my_query->have_posts()) @php($my_query->the_post())
 
 		<div class="col-md-6 col-12">
@@ -15,7 +15,7 @@
 	@endwhile
 
 	<div class="col-md-6 col-12">
-		@php($inner_my_query = new WP_Query( 'category_name=Sports&posts_per_page=3' ))
+		@php($inner_my_query = new WP_Query( 'category_name=Culture&posts_per_page=3' ))
 		@while($inner_my_query->have_posts()) @php($inner_my_query->the_post())
 		<a class="post-link" href="#">
 			<div class="sub-post col-sm-12">
