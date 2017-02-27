@@ -122,7 +122,7 @@
 								<div class="clearfix"></div>
 								<div class="col-12">
 			 
-			  						@include ('partials.content-culture')
+			  						@include ('partials.content-advertise')
 
 								</div>
 
