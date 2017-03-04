@@ -82,8 +82,12 @@ h2 {
 	font-size: 18px;
 }
 
-.post-link:hover .sub-post {
-	background-color: $gray-lighter;
+.post-link {
+	color: black;
+}
+
+.post-link:hover {
+	color: $gray;
 }
 
 .featured-title {
