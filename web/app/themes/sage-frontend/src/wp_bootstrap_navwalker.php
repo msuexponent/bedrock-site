@@ -104,7 +104,7 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
                 $atts['class']          = '';
                 if ( $args->has_children ){
                     $classes[] = '';
-                    $atts['href']           = '#';
+                    $atts['href']           = $item->url;
                     $atts['data-toggle']    = 'dropdown';
                     $atts['class']          = 'dropdown-toggle';
                     $atts['role']   = 'button';
