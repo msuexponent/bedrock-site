@@ -68,9 +68,12 @@ a:focus {
 }
 
 .sub-post {
+	padding-top: 10px;
+	padding-bottom: 10px;
 	position: relative;
 	background-color: $gray-lighter;
-	height: 87.8px;
+	/* height: 87.8px; */
+	height: auto;
 }
 
 h2 {

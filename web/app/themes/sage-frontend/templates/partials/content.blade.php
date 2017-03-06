@@ -10,7 +10,7 @@
 
 	<div class="col-12 col-lg-5 max-img-height">
 		<div class="img-container">
-			<img class="img-fluid" alt="Responsive image" src="@php(the_post_thumbnail('large'))"/>
+			{!! the_post_thumbnail('large', array('class' => 'img-fluid')) !!}
 		</div>
 	</div>
 	<div class="col-12 col-lg-0 top20 hidden-lg-up">
@@ -29,9 +29,9 @@
 		@while ($inner_my_query->have_posts()) @php($inner_my_query->the_post())
 			<div class="col-12">
 				<a class="post-link" href="{!! get_permalink() !!}">
-					<div class="sub-post">
-						<h3 class="post-title position-abs-top">@php(the_title())</h3>
-						<p class="bottom-no-marg post-author position-abs-bottom">- @php(the_author())</p>
+					<div class="sub-post col-12">
+						<h3 class="post-title">@php(the_title())</h3>
+						<p class="bottom-no-marg post-author">- @php(the_author())</p>
 					</div>
 				</a>
 			</div>
