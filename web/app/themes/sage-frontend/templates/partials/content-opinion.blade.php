@@ -17,7 +17,7 @@
 	@endwhile
 
 	<div class="col-md-6 col-12">
-		@php($inner_args = array('category_name'=>'Opinion', 'posts_per_page'=>3, 'post__not_in'=>array($first_post)))
+		@php($inner_args = array('category_name'=>'Opinion', 'posts_per_page'=>4, 'post__not_in'=>array($first_post)))
 		@php($inner_my_query = new WP_Query($inner_args))
 		@while($inner_my_query->have_posts()) @php($inner_my_query->the_post())
 		<a class="post-link" href="{!! get_permalink() !!}">
