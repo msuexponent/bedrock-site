@@ -79,9 +79,18 @@
 	}
 
 	.nav-item {
+		width: 100%;
 		height: auto;
 		line-height: 40px;
 		display: block;
+	}
+
+	#nav-drop {
+		width: 100%;
+	}
+
+	.mobile-drop {
+		color: white;
 	}
 
 	.left-nav {
@@ -122,5 +131,9 @@
 
 	.nav-item:hover .dropdown-menu {
     	display: block;
+	}
+
+	.mobile-drop {
+		display: none;
 	}
 }
