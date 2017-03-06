@@ -9,7 +9,7 @@
 				<div class="img-container sub-sec-max-img-height">
 					<img class="img-fluid" alt="Responsive image" src="@php(the_post_thumbnail('large'))"/>
 				</div>
-				<h1 class="top10 post-title">- @php(the_title())</h1>
+				<h1 class="top10 post-title">@php(the_title())</h1>
 				<p class="post-desc">@php(the_excerpt())</p>
 			</a>
 		</div>
