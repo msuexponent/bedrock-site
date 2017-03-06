@@ -23,7 +23,7 @@
 		<a class="post-link" href="{!! get_permalink() !!}">
 			<div class="sub-post col-sm-12">
 				<h3 class="post-title">{!! the_title() !!}</h3>
-				<p class="bottom-no-marg post-author">- {!! the_author() !!}</p>
+				<p class="bottom-no-marg post-author">- @php(the_author())</p>
 			</div>
 		</a>
 		@endwhile

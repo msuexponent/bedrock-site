@@ -53,7 +53,8 @@
 .dropdown-item .active, 
 .nav-item:hover, 
 .nav-item:focus, 
-.nav-item .active {
+.nav-item .active,
+.current-menu-item {
 	color: #fff;
 	background-color: $gray-dark;
 	text-decoration: none;

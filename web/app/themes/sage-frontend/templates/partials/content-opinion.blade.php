@@ -7,7 +7,7 @@
 		<div class="col-md-6 col-12">
 			<a class="post-link" href="{!! get_permalink() !!}">
 				<div class="img-container sub-sec-max-img-height">
-					{!! the_post_thumbnail('large', array('class' => 'img-fluid')) !!}
+					{!! the_post_thumbnail('full', array('class' => 'img-fluid')) !!}
 				</div>
 				<h1 class="top10 post-title">{!! the_title() !!}</h1>
 				<p class="post-desc">{!! the_excerpt() !!}</p>
@@ -23,7 +23,7 @@
 		<a class="post-link" href="{!! get_permalink() !!}">
 			<div class="sub-post col-sm-12">
 				<h3 class="post-title">{!! the_title() !!}</h3>
-				<p class="bottom-no-marg post-author">- {!! the_author() !!}</p>
+				<p class="bottom-no-marg post-author">- @php(the_author())</p>
 			</div>
 		</a>
 		@endwhile
