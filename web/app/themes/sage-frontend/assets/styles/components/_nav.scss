@@ -48,7 +48,12 @@
 	padding-bottom: 0;
 }
 
-.dropdown-item:hover, .dropdown-item:focus, .dropdown-item .active .nav-item:hover, .nav-item:focus, .nav-item .active {
+.dropdown-item:hover, 
+.dropdown-item:focus, 
+.dropdown-item .active, 
+.nav-item:hover, 
+.nav-item:focus, 
+.nav-item .active {
 	color: #fff;
 	background-color: $gray-dark;
 	text-decoration: none;
