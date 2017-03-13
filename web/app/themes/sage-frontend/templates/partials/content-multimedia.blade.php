@@ -1,4 +1,4 @@
-<div id="media-carousel" class="carousel slide top10" data-ride="carousel">
+<div id="media-carousel" class="carousel slide top10 bottom40" data-ride="carousel">
   	<ol class="carousel-indicators">
     	<li data-target="#media-carousel" data-slide-to="0" class="active"></li>
     	<li data-target="#media-carousel" data-slide-to="1"></li>
