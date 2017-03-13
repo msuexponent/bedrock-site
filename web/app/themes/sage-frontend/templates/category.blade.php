@@ -13,4 +13,5 @@
 		</div>
 
 		{!! get_the_posts_navigation() !!}
+		
 	@endsection
