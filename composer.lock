@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1ec5f44cda9a88adf5944bafb3d1830a",
+    "content-hash": "cbfb6e38ec1996bde457ab81ff678bc5",
     "packages": [
         {
             "name": "composer/installers",
@@ -108,16 +108,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.7.2",
+            "version": "4.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "ac7b1792641d1fb61cb2901db292903b31694057"
+                "reference": "eef7c0520b1e7187cd2cd7540dc997c4c3b0340a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/ac7b1792641d1fb61cb2901db292903b31694057",
-                "reference": "ac7b1792641d1fb61cb2901db292903b31694057",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/eef7c0520b1e7187cd2cd7540dc997c4c3b0340a",
+                "reference": "eef7c0520b1e7187cd2cd7540dc997c4c3b0340a",
                 "shasum": ""
             },
             "require": {
@@ -141,7 +141,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2017-01-26T18:32:19+00:00"
+            "time": "2017-03-06T16:01:58+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -403,6 +403,26 @@
                 "wp-sync-db"
             ],
             "time": "2016-03-07 16:34:12"
+        },
+        {
+            "name": "wpackagist-plugin/disqus-comment-system",
+            "version": "2.86",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/disqus-comment-system/",
+                "reference": "tags/2.86"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/disqus-comment-system.2.86.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/disqus-comment-system/"
         },
         {
             "name": "wpackagist-plugin/flamingo",
