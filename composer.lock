@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "eaae91b1baf0e998d24f2ec7bd625dcd",
+    "content-hash": "5ccd3b40e21dbf8dd67dee039c72bc0d",
     "packages": [
         {
             "name": "composer/installers",
@@ -405,6 +405,26 @@
             "time": "2016-03-07 16:34:12"
         },
         {
+            "name": "wpackagist-plugin/add-multiple-users",
+            "version": "2.0.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/add-multiple-users/",
+                "reference": "tags/2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/add-multiple-users.2.0.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/add-multiple-users/"
+        },
+        {
             "name": "wpackagist-plugin/akismet",
             "version": "3.3",
             "source": {
@@ -485,6 +505,26 @@
             "homepage": "https://wordpress.org/plugins/co-authors-plus/"
         },
         {
+            "name": "wpackagist-plugin/contact-form-7",
+            "version": "4.7",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
+                "reference": "tags/4.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/contact-form-7/"
+        },
+        {
             "name": "wpackagist-plugin/disqus-comment-system",
             "version": "2.86",
             "source": {
@@ -563,6 +603,46 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/media-library-plus/"
+        },
+        {
+            "name": "wpackagist-plugin/really-simple-captcha",
+            "version": "1.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/really-simple-captcha/",
+                "reference": "tags/1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/really-simple-captcha.1.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/really-simple-captcha/"
+        },
+        {
+            "name": "wpackagist-plugin/simple-share-buttons-adder",
+            "version": "6.3.4",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/simple-share-buttons-adder/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-share-buttons-adder.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/simple-share-buttons-adder/"
         },
         {
             "name": "wpackagist-plugin/tinymce-advanced",

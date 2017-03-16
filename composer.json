@@ -51,7 +51,11 @@
     "wpackagist-plugin/media-library-plus": "3.2.7",
     "wpackagist-plugin/co-authors-plus": "3.2.1",
     "wpackagist-plugin/autoset-featured-image": "1.2.2",
-    "wpackagist-plugin/akismet": "3.3"
+    "wpackagist-plugin/akismet": "3.3",
+    "wpackagist-plugin/add-multiple-users": "2.0.0",
+    "wpackagist-plugin/contact-form-7": "4.7",
+    "wpackagist-plugin/really-simple-captcha": "1.9",
+    "wpackagist-plugin/simple-share-buttons-adder": "6.3.4"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
