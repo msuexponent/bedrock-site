@@ -42,7 +42,16 @@
     "wp-sync-db/wp-sync-db": "dev-master@dev",
     "wp-sync-db/wp-sync-db-media-files": "dev-master",
     "wpackagist-plugin/flamingo": "1.5",
-    "wpackagist-plugin/disqus-comment-system": "2.86"
+    "wpackagist-plugin/disqus-comment-system": "2.86",
+    "wpackagist-plugin/jetpack": "4.7.1",
+    "wpackagist-plugin/tinymce-advanced": "4.4.3",
+    "wpackagist-plugin/wp-sweep": "1.0.10",
+    "wpackagist-plugin/all-in-one-seo-pack": "2.3.12.1",
+    "wpackagist-plugin/wp-super-cache": "1.4.9",
+    "wpackagist-plugin/media-library-plus": "3.2.7",
+    "wpackagist-plugin/co-authors-plus": "3.2.1",
+    "wpackagist-plugin/autoset-featured-image": "1.2.2",
+    "wpackagist-plugin/akismet": "3.3"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
