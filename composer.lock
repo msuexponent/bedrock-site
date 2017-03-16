@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ccd3b40e21dbf8dd67dee039c72bc0d",
+    "content-hash": "7a1debe4fe756328118c3a002e2b5cc9",
     "packages": [
         {
             "name": "composer/installers",
@@ -405,6 +405,26 @@
             "time": "2016-03-07 16:34:12"
         },
         {
+            "name": "wpackagist-plugin/add-logo-to-admin",
+            "version": "1.6.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/add-logo-to-admin/",
+                "reference": "tags/1.6.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/add-logo-to-admin.1.6.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/add-logo-to-admin/"
+        },
+        {
             "name": "wpackagist-plugin/add-multiple-users",
             "version": "2.0.0",
             "source": {
@@ -423,6 +443,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/add-multiple-users/"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-excerpt",
+            "version": "4.2.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-excerpt/",
+                "reference": "tags/4.2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-excerpt.4.2.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-excerpt/"
         },
         {
             "name": "wpackagist-plugin/akismet",
@@ -483,6 +523,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/autoset-featured-image/"
+        },
+        {
+            "name": "wpackagist-plugin/change-permalink-helper",
+            "version": "1.0.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/change-permalink-helper/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/change-permalink-helper.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/change-permalink-helper/"
         },
         {
             "name": "wpackagist-plugin/co-authors-plus",
@@ -585,6 +645,26 @@
             "homepage": "https://wordpress.org/plugins/jetpack/"
         },
         {
+            "name": "wpackagist-plugin/manual-image-crop",
+            "version": "1.12",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/manual-image-crop/",
+                "reference": "tags/1.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/manual-image-crop.1.12.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/manual-image-crop/"
+        },
+        {
             "name": "wpackagist-plugin/media-library-plus",
             "version": "3.2.7",
             "source": {
@@ -663,6 +743,66 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/tinymce-advanced/"
+        },
+        {
+            "name": "wpackagist-plugin/update-control",
+            "version": "1.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/update-control/",
+                "reference": "tags/1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/update-control.1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/update-control/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-dbmanager",
+            "version": "2.78.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-dbmanager/",
+                "reference": "tags/2.78.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-dbmanager.2.78.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-dbmanager/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-maintenance-mode",
+            "version": "2.0.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-maintenance-mode/",
+                "reference": "tags/2.0.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-maintenance-mode.2.0.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-maintenance-mode/"
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",

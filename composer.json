@@ -55,7 +55,14 @@
     "wpackagist-plugin/add-multiple-users": "2.0.0",
     "wpackagist-plugin/contact-form-7": "4.7",
     "wpackagist-plugin/really-simple-captcha": "1.9",
-    "wpackagist-plugin/simple-share-buttons-adder": "6.3.4"
+    "wpackagist-plugin/simple-share-buttons-adder": "6.3.4",
+    "wpackagist-plugin/wp-dbmanager": "2.78.1",
+    "wpackagist-plugin/update-control": "1.5",
+    "wpackagist-plugin/wp-maintenance-mode": "2.0.9",
+    "wpackagist-plugin/manual-image-crop": "1.12",
+    "wpackagist-plugin/add-logo-to-admin": "1.6.2",
+    "wpackagist-plugin/advanced-excerpt": "4.2.3",
+    "wpackagist-plugin/change-permalink-helper": "1.0.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
