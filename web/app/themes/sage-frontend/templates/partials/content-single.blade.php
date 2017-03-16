@@ -1,7 +1,8 @@
-<article @php(post_class())>
+<div @php(post_class())>
 	<h1 class="entry-title">{{ get_the_title() }}</h1>
 	@include('partials/entry-meta')
   	<div class="entry-content">
+
 		@php(the_excerpt())
 
 		@if (get_post_gallery())
@@ -32,7 +33,9 @@
 				</div>
 			</div>
     	@endif
+    	<div class="col-12">
+  			@php(comments_template('/templates/partials/comments.blade.php'))
+  		</div>
+	  		
   	</div>
-
-  	@php(comments_template('/templates/partials/comments.blade.php'))
-</article>
+</div>
