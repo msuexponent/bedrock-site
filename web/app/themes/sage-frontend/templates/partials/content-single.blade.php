@@ -4,7 +4,7 @@
   	<div class="entry-content">
 
   		<div class="col-12">
-			@php(the_excerpt())
+			@php(the_content())
 		</div>
 
 		@if (get_post_gallery())
@@ -40,7 +40,7 @@
 	    	@php($categories = get_the_category())
 	 
 			@if (!empty( $categories))
-				<h4><span class="badge badge-default"><a href="@php(get_category_link($categories))">{!! $categories[0]->name !!}</a></span></h4>
+				<h4><span class="badge badge-default"><a class="gray" href="@php(get_category_link($categories))">{!! $categories[0]->name !!}</a></span></h4>
 			@endif
 		</div>
 

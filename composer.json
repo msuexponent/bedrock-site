@@ -62,7 +62,9 @@
     "wpackagist-plugin/manual-image-crop": "1.12",
     "wpackagist-plugin/add-logo-to-admin": "1.6.2",
     "wpackagist-plugin/advanced-excerpt": "4.2.3",
-    "wpackagist-plugin/change-permalink-helper": "1.0.0"
+    "wpackagist-plugin/change-permalink-helper": "1.0.0",
+    "wpackagist-plugin/force-regenerate-thumbnails": "2.0.6",
+    "wpackagist-plugin/bwp-google-xml-sitemaps": "1.4.1"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
