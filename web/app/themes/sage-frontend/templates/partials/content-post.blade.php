@@ -1,4 +1,4 @@
-<div class="col-3">
+<div class="col-3 top40 bottom40">
 	<a class="post-link" href="{!! get_permalink() !!}">
 		<div class="img-container sub-sec-max-img-height">
 			{!! the_post_thumbnail('full', array('class' => 'img-fluid')) !!}
