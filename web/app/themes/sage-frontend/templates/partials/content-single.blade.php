@@ -2,7 +2,7 @@
 	<div class="row">
 		<div @php(post_class())>
 			<div class="col-12">
-				<h1 class="top40 entry-title">{{ get_the_title() }}</h1>
+				<h1 class="entry-title">{{ get_the_title() }}</h1>
 				@include('partials/entry-meta')
 			</div>
 
