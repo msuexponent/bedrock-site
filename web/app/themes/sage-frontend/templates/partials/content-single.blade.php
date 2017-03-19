@@ -1,6 +1,6 @@
 <div class="col-12">
 	<div class="row">
-		<!-- <div @php(post_class())> -->
+		<div @php(post_class())>
 			<div class="col-12">
 				<h1 class="entry-title">{{ get_the_title() }}</h1>
 				@include('partials/entry-meta')
@@ -8,6 +8,7 @@
 
 	  		<div class="col-12">
 				@php(the_content())
+				{!! do_shortcode('[ssba]') !!}
 			</div>
 
 			@if (get_post_gallery())
@@ -40,17 +41,31 @@
 				</div>
 			@endif
 
-	    	<div class="col-12">
+	    	<div class="col-12 top20">
 		    	@php($categories = get_the_category())
-		 
+		 		@php($tags = get_the_tags())
+
 				@if (!empty( $categories))
-					<h4><span class="badge badge-default"><a class="gray" href="@php(get_category_link($categories))">{!! $categories[0]->name !!}</a></span></h4>
+						@foreach ($categories as $cat)
+						<h4><span class="badge badge-default"><a class="gray" href="@php(get_category_link($categories))">
+							{!! $cat->name !!}
+						</a></span></h4>
+					@endforeach
+				@endif
+
+				@if (!empty( $tags))
+						<span>Tags</span>
+						@foreach ($tags as $tag)
+						<span><a class="gray" href="@php(get_category_link($categories))">
+							{!! $tag->name !!}
+						</a></span>
+					@endforeach
 				@endif
 			</div>
 
-	    	<div class="col-12">
+	    	<div class="col-12 top20">
 	  			@php(comments_template('/templates/partials/comments.blade.php'))
 	  		</div>
-  		<!-- </div> -->
+  		</div>
 	</div>
 </div>
