@@ -1,6 +1,6 @@
 <div class="col-12">
 	<div class="row">
-		<div @php(post_class())>
+		<!-- <div @php(post_class())> -->
 			<div class="col-12">
 				<h1 class="entry-title">{{ get_the_title() }}</h1>
 				@include('partials/entry-meta')
@@ -11,6 +11,7 @@
 			</div>
 
 			@if (get_post_gallery())
+				<p>Gallery Test</p>
 				<div class="col-12">
 		        	@php($gallery = get_post_gallery( get_the_ID(), false ))
 			        <div id="gallery-carousel" class="carousel slide top10 bottom40" data-ride="carousel">
@@ -23,7 +24,7 @@
 			        	<div class="carousel-inner active" role="listbox">
 				            @foreach( $gallery['src'] as $src )
 				                <div class="carousel-item active">
-		    						 <img class="d-block img-fluid" src="{!! $src !!}" alt="First slide" width="640" height="360"/>
+		    						 <img class="d-block img-fluid" src="{!! $src !!}" alt="First slide"/>
 		    					</div>
 				            @endforeach
 				        </div>
@@ -37,7 +38,7 @@
 						</a>
 					</div>
 				</div>
-	    	@endif
+			@endif
 
 	    	<div class="col-12">
 		    	@php($categories = get_the_category())
@@ -50,6 +51,6 @@
 	    	<div class="col-12">
 	  			@php(comments_template('/templates/partials/comments.blade.php'))
 	  		</div>
-  		</div>
+  		<!-- </div> -->
 	</div>
 </div>
