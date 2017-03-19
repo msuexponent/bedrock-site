@@ -47,17 +47,17 @@
 
 				@if (!empty( $categories))
 						@foreach ($categories as $cat)
-						<h4><span class="badge badge-default"><a class="gray" href="@php(get_category_link($categories))">
+						<span><h4><span class="badge badge-default"><a class="gray" href="@php(get_category_link($categories))">
 							{!! $cat->name !!}
-						</a></span></h4>
+						</a></span></h4></span>
 					@endforeach
 				@endif
 
 				@if (!empty( $tags))
 						<span>Tags</span>
 						@foreach ($tags as $tag)
-						<span><a class="gray" href="@php(get_category_link($categories))">
-							{!! $tag->name !!}
+						<span><a href="@php(get_category_link($categories))">
+							{!!  $tag->name !!},
 						</a></span>
 					@endforeach
 				@endif
