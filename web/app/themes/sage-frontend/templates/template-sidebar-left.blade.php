@@ -1,5 +1,5 @@
 {{--
-  Template Name: Full Width
+  Template Name: Left Sidebar
 --}}
 
 @extends('layouts.base')
@@ -9,5 +9,7 @@
     @include('partials.page-header')
     @include('partials.content-page')
   @endwhile
+
+    @include('partials.sidebar')
 
 @endsection
