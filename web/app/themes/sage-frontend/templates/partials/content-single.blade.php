@@ -56,8 +56,8 @@
 				@endif
 
 				@if (!empty( $tags))
-						<span><strong>Tags</strong></span>
-						@foreach ($tags as $tag)
+					<span><strong>Tags</strong></span>
+					@foreach ($tags as $tag)
 						<span><a href="@php(get_tag_link($tag))">
 							{!!  $tag->name !!},
 						</a></span>
