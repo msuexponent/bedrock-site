@@ -48,7 +48,7 @@
 				@if (!empty( $categories))
 					<h4>
 					@foreach ($categories as $cat)
-						<span class="badge badge-default"><a class="gray" href="@php(get_category_link($cat))">
+						<span class="badge badge-default"><a class="gray" href="{!! get_category_link($cat) !!}">
 							{!! $cat->name !!}
 						</a></span>
 					@endforeach
@@ -58,8 +58,8 @@
 				@if (!empty( $tags))
 					<span><strong>Tags</strong></span>
 					@foreach ($tags as $tag)
-						<span><a href="@php(get_tag_link($tag))">
-							{!!  $tag->name !!},
+						<span><a href="{!! get_tag_link($tag) !!}">
+							{!!  $tag->name !!}
 						</a></span>
 					@endforeach
 				@endif
