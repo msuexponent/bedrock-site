@@ -10,8 +10,15 @@
 					@endwhile
 				</div>
 			</div>
-		</div>
 
-		{!! get_the_posts_navigation() !!}
+			<div class="col-12 pad-top40">
+				<div class="row">
+					<ul>
+					@php($args = array('format' => 'page/%#%/'))
+					{!! paginate_links($args) !!}
+					</ul>
+				</div>
+			</div>
+		</div>
 		
 	@endsection

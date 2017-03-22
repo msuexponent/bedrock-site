@@ -5,7 +5,7 @@
 @extends('layouts.base')
 
 	@section('content')
-		<div class="content">
+		<div class="content pad-top40 pad-bottom40">
 		  	<div class="col-12 col-sm-9">
 				@while(have_posts()) @php(the_post())
 				    @include('partials.page-header')

@@ -6,27 +6,25 @@
 				@include('partials/entry-meta')
 			</div>
 
-	  		<div class="col-12">
-				@php(the_content())
-				{!! do_shortcode('[ssba]') !!}
-			</div>
-
 			@if (get_post_gallery())
-				<p>Gallery Test</p>
+				
 				<div class="col-12">
+					<p>Gallery Test</p>
 		        	@php($gallery = get_post_gallery( get_the_ID(), false ))
 			        <div id="gallery-carousel" class="carousel slide top10 bottom40" data-ride="carousel">
 			        	<ol class="carousel-indicators">
 			        		@php($i = 0)
 			        		@foreach( $gallery['src'] as $src )
-						    	<li data-target="#media-carousel" data-slide-to="@php($i++)" class="active"></li>
+						    	<li data-target="#gallery-carousel" data-slide-to="@php($i++)"></li>
 						    @endforeach
 					  	</ol>
-			        	<div class="carousel-inner active" role="listbox">
+			        	<div class="carousel-inner" role="listbox">
+			        		@php($j = 0)
 				            @foreach( $gallery['src'] as $src )
-				                <div class="carousel-item active">
+				                <div class="carousel-item @if($j == 1) {!! 'active' !!} @endif">
 		    						 <img class="d-block img-fluid" src="{!! $src !!}" alt="First slide"/>
 		    					</div>
+		    					@php($j++)
 				            @endforeach
 				        </div>
 					  	<a class="left carousel-control" href="#gallery-carousel" role="button" data-slide="prev">
@@ -40,6 +38,11 @@
 					</div>
 				</div>
 			@endif
+
+			<div class="col-12">
+				@php(the_content())
+				{!! do_shortcode('[ssba]') !!}
+			</div>
 
 	    	<div class="col-12 top20">
 		    	@php($categories = get_the_category())
