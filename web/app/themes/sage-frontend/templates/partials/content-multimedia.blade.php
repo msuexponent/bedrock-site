@@ -8,9 +8,6 @@
       'order' => 'date',
       'type' => 'video'
   ));
-  // foreach ($results as $test) {
-  //   echo $test->id->videoId;
-  // }
 ?>
 
 <div id="media-carousel" class="carousel slide top10 bottom40" data-ride="carousel">
@@ -44,15 +41,6 @@
 	</a>
 </div>
 <?php 
-
-
-// $json = json_encode($results);
-// foreach ($json['items'] as $address)
-// {
-//     echo "items:". $address['address'] ."\n";
-// };
-
-//print_r($results);
 
 //https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCP51_C7GUpefVEbAQHPCMew&maxResults=3&order=date&type=video&key=AIzaSyBgBX-2iSGnapMVlg2Xko15QPVeUT4ZSWM
 ?>
