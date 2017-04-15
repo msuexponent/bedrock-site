@@ -4,7 +4,7 @@
 
 		<div class="col-sm-4 offset-sm-0 col-8 offset-2 float-left col-lg-3">
 			<a href="<?php echo get_home_url(); ?>">
-				<img class="img-fluid" src="http://sage-dev.msuexponent.com/app/themes/sage-frontend/assets/images/exponent-logo.png"/>
+				<img class="img-fluid" src="https://sage-dev.msuexponent.com/app/themes/sage-frontend/assets/images/exponent-logo.png"/>
 			</a>
 		</div>
 
