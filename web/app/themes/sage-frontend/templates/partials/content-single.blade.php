@@ -14,7 +14,8 @@
 			        	<ol class="carousel-indicators">
 			        		@php($i = 0)
 			        		@foreach( $gallery['src'] as $src )
-						    	<li data-target="#gallery-carousel" data-slide-to="@php($i++)"></li>
+						    	<li data-target="#gallery-carousel" data-slide-to="{!! $i !!}" class="@if($i == 0) {!! 'active' !!} @endif"></li>
+						    	@php($i++)
 						    @endforeach
 					  	</ol>
 			        	<div class="carousel-inner" role="listbox">
@@ -36,12 +37,8 @@
 						</a>
 					</div>
 				</div>
-			@endif
 
-			<div class="col-12">
-				@php(the_content())
-				{!! do_shortcode('[ssba]') !!}
-			</div>
+			@endif
 
 	    	<div class="col-12 top20">
 		    	@php($categories = get_the_category())
