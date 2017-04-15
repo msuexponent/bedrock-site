@@ -6,11 +6,10 @@
 				@include('partials/entry-meta')
 			</div>
 
-			@if (get_post_gallery())
+			@if ($gallery = get_post_gallery( get_the_ID(), false ))
 				
 				<div class="col-12">
 					<p>Gallery Test</p>
-		        	@php($gallery = get_post_gallery( get_the_ID(), false ))
 			        <div id="gallery-carousel" class="carousel slide top10 bottom40" data-ride="carousel">
 			        	<ol class="carousel-indicators">
 			        		@php($i = 0)

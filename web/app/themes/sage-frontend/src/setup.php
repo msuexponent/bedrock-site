@@ -156,3 +156,7 @@ add_action('after_setup_theme', function () {
  */
 sage()->bindIf('config', Config::class, true);
 
+add_theme_support('bootstrap-gallery');
+
+require_once locate_template('/src/lib/gallery.php');
+
