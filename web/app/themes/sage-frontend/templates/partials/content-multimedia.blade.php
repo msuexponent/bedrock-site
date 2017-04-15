@@ -1,29 +1,38 @@
+<?php
+  $youtube = new Madcoda\Youtube\Youtube(array('key' => 'AIzaSyBgBX-2iSGnapMVlg2Xko15QPVeUT4ZSWM'));
+  //  $channel = $youtube->getChannelByName('ASMSUExponent');
+  $results = $youtube->searchAdvanced(array(
+      'q' => 'msu exponent',
+      'part' => 'snippet',
+      'maxResults' => 3,
+      'order' => 'date',
+      'type' => 'video'
+  ));
+  // foreach ($results as $test) {
+  //   echo $test->id->videoId;
+  // }
+?>
+
 <div id="media-carousel" class="carousel slide top10 bottom40" data-ride="carousel">
+    
   	<ol class="carousel-indicators">
-    	<li data-target="#media-carousel" data-slide-to="0" class="active"></li>
-    	<li data-target="#media-carousel" data-slide-to="1"></li>
-    	<li data-target="#media-carousel" data-slide-to="2"></li>
+      @php($i = 0)
+      @while($i < count($results)) 
+      	<li data-target="#media-carousel" data-slide-to="{!! $i !!}" class="@if($i == 0) {!! 'active' !!} @endif"></li>
+        @php($i++)
+      @endwhile
   	</ol>
 
-
-
   	<div class="carousel-inner" role="listbox">
-    	<div class="carousel-item active">
-    		<div class="embed-responsive embed-responsive-16by9" align="center">
-           <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/190495051" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
-    	</div>
-    	<div class="carousel-item">
-    		<div class="embed-responsive embed-responsive-16by9" align="center">
-   				 <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/190495051" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-				</div>
-    	</div>
-    	<div class="carousel-item">
-    		<div class="embed-responsive embed-responsive-16by9" align="center">
-          <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/190495051" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          
-				</div>
-    	</div>
+      @php($j = 0)
+      @foreach($results as $video)
+        <div class="carousel-item @if($j == 0) {!! 'active' !!} @endif">
+          <div class="embed-responsive embed-responsive-16by9" align="center">
+             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{!! $video->id->videoId !!}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+         @php($j++)
+      @endforeach
   	</div>
   	<a class="left carousel-control" href="#media-carousel" role="button" data-slide="prev">
     	<span class="icon-prev" aria-hidden="true"></span>
@@ -34,3 +43,16 @@
     	<span class="sr-only">Next</span>
 	</a>
 </div>
+<?php 
+
+
+// $json = json_encode($results);
+// foreach ($json['items'] as $address)
+// {
+//     echo "items:". $address['address'] ."\n";
+// };
+
+//print_r($results);
+
+//https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCP51_C7GUpefVEbAQHPCMew&maxResults=3&order=date&type=video&key=AIzaSyBgBX-2iSGnapMVlg2Xko15QPVeUT4ZSWM
+?>

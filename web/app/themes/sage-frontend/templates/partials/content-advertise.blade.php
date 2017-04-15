@@ -1,0 +1,1 @@
+<img class="img-fluid" src="https://msuexponent.dev/app/themes/sage-frontend/assets/images/Saul_Abel-Home_buyer.jpg"/>
