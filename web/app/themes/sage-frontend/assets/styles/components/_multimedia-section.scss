@@ -17,3 +17,7 @@ iframe {
 .carousel-control.left, .carousel-control.right {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%);
 }
+
+.carousel-item.active {
+	display: block;
+}
