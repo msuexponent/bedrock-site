@@ -40,7 +40,9 @@
 
 			@endif
 
-			@php(the_content())
+			<div class="col-12">
+				@php(the_content())
+			</div>
 
 	    	<div class="col-12 top20">
 		    	@php($categories = get_the_category())
