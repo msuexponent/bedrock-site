@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7baf222751690a6855f372f277ab53f",
+    "content-hash": "000bbb8c24b6798105e770f7116695e3",
     "packages": [
         {
             "name": "composer/installers",
@@ -762,6 +762,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/media-library-plus/"
+        },
+        {
+            "name": "wpackagist-plugin/nextgen-gallery",
+            "version": "2.2.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/nextgen-gallery/",
+                "reference": "tags/2.2.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/nextgen-gallery.2.2.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/nextgen-gallery/"
         },
         {
             "name": "wpackagist-plugin/really-simple-captcha",
