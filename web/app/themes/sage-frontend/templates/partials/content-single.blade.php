@@ -6,6 +6,11 @@
 				@include('partials/entry-meta')
 			</div>
 
+			<?php
+    $gallery_shortcode = '[gallery id="' . intval( $post->post_parent ) . '"]';
+    print apply_filters( 'the_content', $gallery_shortcode );
+ ?>
+
 			@if ($gallery = get_post_gallery( get_the_ID(), false ))
 				
 				<div class="col-12">
