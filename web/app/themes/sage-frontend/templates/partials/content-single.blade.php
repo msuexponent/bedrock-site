@@ -28,7 +28,7 @@
 			        	<div class="carousel-inner" role="listbox">
 			        		@php($j = 0)
 				            @foreach( $children as $attachment_id => $attachment )
-				                <div class="carousel-item @if($j == 1) {!! 'active' !!} @endif">
+				                <div class="carousel-item @if($j == 0) {!! 'active' !!} @endif">
 		    						 <img class="d-block img-fluid" src="{!! wp_get_attachment_url( $attachment_id, 'full' ) !!}" alt="First slide"/>
 		    					</div>
 		    					@php($j++)
