@@ -5,14 +5,6 @@
 				<h1 class="entry-title">{{ get_the_title() }}</h1>
 				@include('partials/entry-meta')
 			</div>
-			<p>
-			test
-			<?php
-    // $gallery_shortcode = '[gallery id="' . intval( $post->postparent ) . '"]';
-    // print apply_filters( 'the_content', $gallery_shortcode );
-			//do_shortcode('[slick-carousel]');
- ?>
- </p>
 
 			@if ($gallery = get_post_gallery( get_the_ID(), false ))
 				
