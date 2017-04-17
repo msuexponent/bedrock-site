@@ -6,23 +6,30 @@
 				@include('partials/entry-meta')
 			</div>
 
-			@if ($gallery = get_post_gallery( get_the_ID(), false ))
+			<?php 
+				$args = array(
+					'post_parent' => $post->ID,
+					'post_type'   => 'attachment', 
+					'numberposts' => -1
+				);
+				$children = get_children( $args );
+			?> 
+			@if (!empty($children))
 				
 				<div class="col-12">
-					<p>Gallery Test</p>
 			        <div id="gallery-carousel" class="carousel slide top10 bottom40" data-ride="carousel">
 			        	<ol class="carousel-indicators">
 			        		@php($i = 0)
-			        		@foreach( $gallery['src'] as $src )
+			        		@foreach( $children as $attachment_id => $attachment )
 						    	<li data-target="#gallery-carousel" data-slide-to="{!! $i !!}" class="@if($i == 0) {!! 'active' !!} @endif"></li>
 						    	@php($i++)
 						    @endforeach
 					  	</ol>
 			        	<div class="carousel-inner" role="listbox">
 			        		@php($j = 0)
-				            @foreach( $gallery['src'] as $src )
+				            @foreach( $children as $attachment_id => $attachment )
 				                <div class="carousel-item @if($j == 1) {!! 'active' !!} @endif">
-		    						 <img class="d-block img-fluid" src="{!! $src !!}" alt="First slide"/>
+		    						 <img class="d-block img-fluid" src="{!! wp_get_attachment_url( $attachment_id, 'full' ) !!}" alt="First slide"/>
 		    					</div>
 		    					@php($j++)
 				            @endforeach
