@@ -4,7 +4,7 @@
 
 		<div class="col-sm-4 offset-sm-0 col-8 offset-2 float-left col-lg-3">
 			<a href="<?php echo get_home_url(); ?>">
-				<img class="img-fluid" src="https://sage-dev.msuexponent.com/app/themes/sage-frontend/assets/images/exponent-logo.png"/>
+				<img class="img-fluid" src="<?php echo get_template_directory_uri();?>/assets/images/exponent-logo.png"/>
 			</a>
 		</div>
 
@@ -49,14 +49,16 @@
 
 <!-- Top navigation -->
 <div class="navbar">
-	<nav class="row-fluid nav navbar-toggleable-sm background-blue content">
+	<nav class="row-fluid navbar-toggleable-sm background-blue content">
 		<div class="collapse navbar-collapse" id="nav-drop">
-			@if (has_nav_menu('primary_navigation'))
-				{!! wp_nav_menu(['container' => false, 'theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav left-nav col-12 col-md-7 float-md-left']) !!}
-			@endif
-			@if (has_nav_menu('top_right_navigation'))
-				{!! wp_nav_menu(['container' => false, 'theme_location' => 'top_right_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav right-nav float-md-right col-12 col-md-4 col-xl-3']) !!}
-			@endif
+			<div id="nav-cont">
+				@if (has_nav_menu('primary_navigation'))
+					{!! wp_nav_menu(['container' => false, 'theme_location' => 'primary_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'left-nav nav']) !!}
+				@endif
+				@if (has_nav_menu('top_right_navigation'))
+					{!! wp_nav_menu(['container' => false, 'theme_location' => 'top_right_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav right-nav']) !!}
+				@endif
+			</div>
 		</div>
 	</nav>
 </div>
