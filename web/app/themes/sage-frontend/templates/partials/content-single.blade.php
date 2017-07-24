@@ -62,7 +62,7 @@
 				@if (!empty( $categories))
 					<h4>
 						@foreach ($categories as $cat)
-							<span class="badge badge-default"><a class="gray" href="{!! get_category_link($cat) !!}">
+							<span class="badge badge-default"><a class="gray category_badge" href="{!! get_category_link($cat) !!}">
 								{!! $cat->name !!}
 							</a></span>
 						@endforeach
@@ -73,7 +73,7 @@
 					<span><strong>Tags</strong></span>
 					@php($tags_output = [])
 					@foreach ($tags as $tag)
-						@php($tags_output[] = '<span><a href="{!! get_tag_link($tag) !!}">' . $tag->name . '</a></span>')
+						@php($tags_output[] = '<span><a href="' . get_tag_link($tag) . '">' . $tag->name . '</a></span>')
 					@endforeach
 					{!! implode(", ", $tags_output) !!}
 				@endif
