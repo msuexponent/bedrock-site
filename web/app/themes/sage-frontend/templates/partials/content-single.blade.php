@@ -52,27 +52,30 @@
 			</div>
 
 	    	<div class="col-12 top20">
-	    		{!! do_shortcode('[ssba]') !!}
+	    		<div id="social-icons" class="bottom10">
+	    			{!! do_shortcode('[ssba]') !!}
+	    		</div>
+	    		
 		    	@php($categories = get_the_category())
 		 		@php($tags = get_the_tags())
 
 				@if (!empty( $categories))
 					<h4>
-					@foreach ($categories as $cat)
-						<span class="badge badge-default"><a class="gray" href="{!! get_category_link($cat) !!}">
-							{!! $cat->name !!}
-						</a></span>
-					@endforeach
+						@foreach ($categories as $cat)
+							<span class="badge badge-default"><a class="gray" href="{!! get_category_link($cat) !!}">
+								{!! $cat->name !!}
+							</a></span>
+						@endforeach
 					</h4>
 				@endif
 
 				@if (!empty( $tags))
 					<span><strong>Tags</strong></span>
+					@php($tags_output = [])
 					@foreach ($tags as $tag)
-						<span><a href="{!! get_tag_link($tag) !!}">
-							{!!  $tag->name !!}
-						</a></span>
+						@php($tags_output[] = '<span><a href="{!! get_tag_link($tag) !!}">' . $tag->name . '</a></span>')
 					@endforeach
+					{!! implode(", ", $tags_output) !!}
 				@endif
 			</div>
 
