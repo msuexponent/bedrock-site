@@ -37,7 +37,7 @@
 }
 
 .dropdown-menu {
-width: auto;
+	width: auto;
 	display: none;
 	/* position: absolute; */
 	z-index: 1;
@@ -48,6 +48,10 @@ width: auto;
 	border: none;
     background-color: #2c3e63;
     min-width: 160px;
+}
+
+.dropup .dropdown-menu {
+	margin-bottom: 0;
 }
 
 .dropdown-item {

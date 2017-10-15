@@ -1,13 +1,15 @@
 <?php
+
+  /* Get latest three uploads from the MSU exponent youtube account using the Madcoda Youtube API wrapper */
   $youtube = new Madcoda\Youtube\Youtube(array('key' => 'AIzaSyBgBX-2iSGnapMVlg2Xko15QPVeUT4ZSWM'));
-  //  $channel = $youtube->getChannelByName('ASMSUExponent');
-  $results = $youtube->searchAdvanced(array(
-      'q' => 'msu exponent',
-      'part' => 'snippet',
-      'maxResults' => 3,
-      'order' => 'date',
-      'type' => 'video'
-  ));
+
+  $getUploadsId = $youtube->getChannelByName('ASMSUExponent');
+
+  $uploads = json_decode(json_encode($getUploadsId), true);
+
+  $results = $youtube->getPlaylistItemsByPlaylistIdAdvanced(array('playlistId' => $uploads['contentDetails']['relatedPlaylists']['uploads'], 'part' => 'contentDetails', 'maxResults' => 3));
+  $resultsJson = json_decode(json_encode($results), true);
+
 ?>
 
 <div id="media-carousel" class="carousel slide top10 bottom40" data-ride="carousel">
@@ -25,7 +27,7 @@
       @foreach($results as $video)
         <div class="carousel-item @if($j == 0) {!! 'active' !!} @endif">
           <div class="embed-responsive embed-responsive-16by9" align="center">
-             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{!! $video->id->videoId !!}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{!! $resultsJson[$j]['contentDetails']['videoId'] !!}" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           </div>
         </div>
          @php($j++)
@@ -40,7 +42,3 @@
     	<span class="sr-only">Next</span>
 	</a>
 </div>
-<?php 
-
-//https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCP51_C7GUpefVEbAQHPCMew&maxResults=3&order=date&type=video&key=AIzaSyBgBX-2iSGnapMVlg2Xko15QPVeUT4ZSWM
-?>

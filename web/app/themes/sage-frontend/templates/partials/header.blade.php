@@ -11,16 +11,16 @@
 		<div class="col-12 col-md-6 float-right">
 			<div class="row">
 				<div class="social col-12 offset-sm-0 col-sm-12">
-					<a href="" class="float-right btn btn-social-icon">
+					<a href="https://twitter.com/msuexpo?lang=en" target="_blank" class="float-right btn btn-social-icon">
 						<span class="fa fa-twitter"></span>
 					</a>
-					<a href="" class="float-right btn btn-social-icon">
+					<a href="https://www.facebook.com/MSUExponent" target="_blank" class="float-right btn btn-social-icon">
 						<span class="fa fa-facebook"></span>
 					</a>
-					<a href="" class="float-right btn btn-social-icon">
+					<a href="https://www.youtube.com/user/ASMSUExponent" target="_blank" class="float-right btn btn-social-icon">
 						<span class="fa fa-youtube"></span>
 					</a>
-					<a href="" class="float-right btn btn-social-icon">
+					<a href="https://www.instagram.com/msuexpo" target="_blank" class="float-right btn btn-social-icon">
 						<span class="fa fa-instagram"></span>
 					</a>
 				</div>

@@ -17,3 +17,8 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+
+/* Makes the disqus comments stay in the page container and not overflow into the footer */
+.disqus-container iframe {
+	position: relative;
+}

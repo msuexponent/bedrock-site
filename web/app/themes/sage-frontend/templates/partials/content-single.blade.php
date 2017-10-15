@@ -80,7 +80,9 @@
 			</div>
 
 	    	<div class="col-12 top20">
-	  			@php(comments_template('/templates/partials/comments.blade.php'))
+	    		<div class="disqus-container">
+	  				@php(comments_template('/templates/partials/comments.blade.php'))
+	  			</div>
 	  		</div>
   		</div>
 	</div>
