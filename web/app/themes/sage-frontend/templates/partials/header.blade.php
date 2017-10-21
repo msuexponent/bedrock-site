@@ -27,7 +27,7 @@
 			</div>
 			<div class="row">
 				<div class="col-10 col-sm-11 col-md-9 ml-md-auto">
-					<form>
+					<form action="/" method="get">
 						<input type="text" class="form-control front-search " placeholder="search" value="<?php the_search_query(); ?>" name="s" id="s">
 						<input type="submit" class="hidden-sm-up hidden-xs-down">
 					</form>

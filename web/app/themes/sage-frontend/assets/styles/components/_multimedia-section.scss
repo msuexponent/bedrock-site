@@ -21,3 +21,10 @@ iframe {
 .carousel-item.active {
 	display: block;
 }
+
+/* Override default z-index value for the multimedia container
+	* so dropups don't fall behind it on hover
+*/
+.carousel-indicators {
+	z-index: 1;
+}
