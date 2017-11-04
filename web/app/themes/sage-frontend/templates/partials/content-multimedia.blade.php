@@ -12,7 +12,7 @@
 
 ?>
 
-<div id="media-carousel" class="carousel slide top10 bottom40" data-ride="carousel">
+<div id="media-carousel" class="carousel slide top10 bottom40" data-ride="carousel" data-interval="false">
     
   	<ol class="carousel-indicators">
       @php($i = 0)
