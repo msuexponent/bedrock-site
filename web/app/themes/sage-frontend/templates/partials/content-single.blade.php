@@ -17,7 +17,7 @@
 			@if (!empty($children))
 				
 				<div class="col-12">
-			        <div id="gallery-carousel" class="carousel slide top10 bottom40" data-ride="carousel">
+			        <div id="gallery-carousel" class="carousel slide top10 bottom40" data-ride="carousel" data-interval="false">
 			        	<ol class="carousel-indicators">
 			        		@php($i = 0)
 			        		@foreach( $children as $attachment_id => $attachment )
